@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class LineComparison {
     public static int x, x1, x2, x3, x4, y, y1, y2, y3, y4;
-    public static double distance1, distance2;
 
     public static void main(String[] args) {
         System.out.println("Welcome to Line comparison program!!");
