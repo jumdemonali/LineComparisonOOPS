@@ -22,7 +22,6 @@ public class LineComparison {
         System.out.print("Enter the value of y2 of line1 ");
         y1 = sc.nextInt();
         double line1 = (Math.sqrt(Math.pow((x1 - x), 2)) + Math.pow((y1 - y), 2));
-
         System.out.println("Enter Coordinates of second line : ");
         System.out.println("Enter the value of x1  of line2 ");
         x3 = sc.nextInt();
@@ -39,9 +38,10 @@ public class LineComparison {
     static void compareTo(Double value1, Double value2) {
         if (value1 == value2) {
             System.out.println("Both lines are equal in length.");
-        }
-        else {
-            System.out.println("Line are not equal in length");
+        } else if (value1 > value2) {
+            System.out.println("Line 1 is greater than Line 2");
+        } else {
+            System.out.println("Line 2 is greater than Line 1");
         }
     }
 }
